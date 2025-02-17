@@ -1,5 +1,3 @@
----
-
 # **O.P.T.E. (Online Platform for Tabletop RPGs)**  
 *Open-source self-hosted platform for playing Tabletop RPGs online*
 
