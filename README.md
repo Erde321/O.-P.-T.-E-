@@ -1,4 +1,4 @@
-# **O.P.T.E. (Online Platform for Tabletop RPGs)**  
+# **O. P. T. E: (Online Platform for Tabletop RPGs)**  
 *Open-source self-hosted platform for playing Tabletop RPGs online*
 
 O.P.T.E. is an open-source, self-hosted web platform designed for playing tabletop role-playing games (TTRPGs) online. It enables users to easily manage campaigns, characters, NPCs, and maps, while allowing sharing of entire campaigns through `.erde` files. The platform uses **ngrok** for port forwarding, making it accessible outside your local network.
