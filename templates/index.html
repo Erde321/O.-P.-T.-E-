@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>Willkommen bei O-P-T-E!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>User Login</h2>
+            <form method="post">
+                <input type="text" name="username" placeholder="Benutzername" required>
+                <button type="submit" name="user_login">Anmelden</button>
+            </form>
+
+            <h2>Admin Login</h2>
+            <form method="post">
+                <input type="password" name="admin_password" placeholder="Admin Passwort" required>
+                <button type="submit" name="admin_login">Anmelden</button>
+            </form>
+
+            {% if error %}
+            <p style="color: red;">{{ error }}</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+
+</html>

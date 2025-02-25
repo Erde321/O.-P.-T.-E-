@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user_dashboard.css') }}">
+    <script src="{{ url_for('static', filename='js/user_dashboard.js') }}"></script>
+</head>
+
+<body>
+
+    <h2>User Bereich</h2>
+
+    <input type="hidden" id="userId" value="{{ session['user_id'] }}">
+    <div id="largeImageContainer" class="large-image-container">
+        <!-- Der Inhalt wird vollständig durch JavaScript definiert -->
+    </div>
+
+    <a href="{{ url_for('main.logout') }}">Logout</a>
+</body>
+
+</html>

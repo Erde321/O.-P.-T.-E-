@@ -1,0 +1,53 @@
+.image-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.image-item {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.image-item img {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.image-item img.selected {
+    border-color: red;
+    /* Hervorhebung des ausgewählten Bildes */
+}
+
+.image-item input {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.large-image-container {
+    width: 100%;
+    height: 700px;
+    /* Längerer Bereich */
+    border: 2px solid black;
+    /* Schwarze Umrandung */
+    background-color: white;
+    /* Weißer Hintergrund */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.large-image-container img {
+    position: absolute;
+    cursor: grab;
+}
+
+.placeholder-text {
+    font-size: 24px;
+    color: gray;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_dashboard.css') }}">
+    <script src="{{ url_for('static', filename='js/admin_dashboard.js') }}"></script>
+</head>
+
+<body>
+    <h2>Admin Bereich</h2>
+
+    <div id="aktuelles_project">
+        <!-- Der Inhalt wird vollständig durch JavaScript definiert -->
+    </div>
+
+    <button onclick="toggleUserList()">👥 Registrierte Benutzer anzeigen/verstecken</button>
+    <div id="userList" style="display: none;">
+        <!-- Der Inhalt wird vollständig durch JavaScript definiert -->
+    </div>
+
+    <button onclick="toggleProjectManagement()">📂 Projektverwaltung ein-/ausblenden</button>
+    <div id="projectManagement" style="display: none; margin-top: 20px;">
+        <!-- Der Inhalt wird vollständig durch JavaScript definiert -->
+    </div>
+
+    <button onclick="toggleCardManagement()">🖼️ Kartenverwaltung ein-/ausblenden</button>
+    <div id="cardManagement" style="display: none; margin-top: 20px;">
+        <!-- Der Inhalt wird vollständig durch JavaScript definiert -->
+    </div>
+
+    <div>
+        <form method="POST" action="{{ url_for('main.update_sync', project_id=current_project.id) }}">
+            <label for="syncCheckbox">Synchronisation aktivieren:</label>
+            <input type="checkbox" id="syncCheckbox" name="sync" onchange="this.form.submit()">
+            <input type="hidden" name="project_id" value="{{ current_project.id }}">
+        </form>
+    </div>
+
+    <div id="largeImageContainer" class="large-image-container">
+        <!-- Der Inhalt wird vollständig durch JavaScript definiert -->
+    </div>
+
+    <br>
+    <a href="{{ url_for('main.logout') }}">Logout</a>
+</body>
+
+</html>

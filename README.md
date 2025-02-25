@@ -1,9 +1,7 @@
 # **O. P. T. E: (Online Platform for Tabletop RPGs)**  
 *Open-source self-hosted platform for playing Tabletop RPGs online*
 
-O.P.T.E. is an open-source, self-hosted web platform designed for playing tabletop role-playing games (TTRPGs) online. It enables users to easily manage campaigns, characters, NPCs, and maps, while allowing sharing of entire campaigns through `.erde` files. The platform uses **ngrok** for port forwarding, making it accessible outside your local network.
-
-O.P.T.E. also allows users to extend the platform's functionality by integrating custom logic written in Python.
+O.P.T.E. is an open-source, self-hosted web platform designed for playing tabletop role-playing games (TTRPGs) online. It enables users to easily manage campaigns, characters, NPCs, and maps, while allowing sharing of entire campaigns through `.erde` files. The platform uses **zrok** for port forwarding, making it accessible outside your local network.
 
 ### **Key Features:**
 - **Customizable Campaign Management**: Manage entire campaigns, including characters, NPCs, maps, and notes.
@@ -11,14 +9,13 @@ O.P.T.E. also allows users to extend the platform's functionality by integrating
 - **Custom Maps**: Upload and use your own maps in your campaigns with interactive features.
 - **NPC Management**: Create and manage NPCs, their stats, and their interactions with players.
 - **Campaign Sharing**: Easily share entire campaigns by exporting them as `.erde` files, which contain all relevant data such as characters, maps, NPCs, and notes.
-- **Python Integration**: Extend and modify the platform’s logic by adding custom Python scripts to integrate your own features or game mechanics.
 - **Simple Setup**: With just `make start`, you can run the platform without hassle.
 
 ### **System Requirements:**
 - **Linux**: The platform is designed to run natively on Linux.
 - **Windows (via WSL)**: Windows users can run the platform using **Windows Subsystem for Linux (WSL)**.
 - **ngrok**: Used for port forwarding to make your platform accessible from outside your local network.
-- **Python**: Python is used for extending platform functionality with custom logic.
+- **Python**: Required for running the platform.
 
 ### **Getting Started:**
 
@@ -26,7 +23,7 @@ O.P.T.E. also allows users to extend the platform's functionality by integrating
 - Linux-based system or Windows with WSL.
 - **ngrok** installed for port forwarding.
 - **Make** utility installed.
-- **Python 3.x** for running custom logic.
+- **Python 3.x** for running the platform.
 
 #### **Installation:**
 
@@ -92,3 +89,4 @@ For bug reports or feature requests, please open an issue on GitHub.
 This project is licensed under the **GNU General Public License v2 (GPL-2)**. See the [LICENSE](LICENSE) file for more details.
 
 ---
+````
